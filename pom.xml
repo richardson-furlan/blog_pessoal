@@ -47,41 +47,55 @@
 		</dependency>
 		
 		<!-- Dependências para Geração e Validação do Token JWT -->
-<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt-api</artifactId>
-	<version>0.11.5</version>
-</dependency>
-<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt-impl</artifactId>
-	<version>0.11.5</version>
-</dependency>
-<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt-jackson</artifactId>
-	<version>0.11.5</version>
-</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.5</version>
+		</dependency>
 
 			<!-- Dependências de testes -->
-    <dependency>
-    	<groupId>org.springframework.boot</groupId>
-    	<artifactId>spring-boot-starter-test</artifactId>
-    	<scope>test</scope>
-    	<exclusions>
-    		<exclusion>
-    			<groupId>org.junit.vintage</groupId>
-    			<artifactId>junit-vintage-engine</artifactId>
-    		</exclusion>
-    	</exclusions>
-    </dependency>
+	    <dependency>
+	    	<groupId>org.springframework.boot</groupId>
+	    	<artifactId>spring-boot-starter-test</artifactId>
+	    	<scope>test</scope>
+	    	<exclusions>
+	    		<exclusion>
+	    			<groupId>org.junit.vintage</groupId>
+	    			<artifactId>junit-vintage-engine</artifactId>
+	    		</exclusion>
+	    	</exclusions>
+	    </dependency>
     
-    <!-- Dependência do Banco de dados H2 -->
+   		 <!-- Dependência do Banco de dados H2 -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Dependência para Geração do Swagger -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
+		 </dependency>
+		 
+		 <!-- Dependência do Banco de dados PostgreSQL -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency> 
+
 	</dependencies>
 
 	<build>
@@ -92,5 +106,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
+	
 </project>
